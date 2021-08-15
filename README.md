@@ -1,1 +1,3 @@
-# Learning-database-DBMS
+# Learning-Database (DBMS focus)
+===========================================================================================
+## Resources
