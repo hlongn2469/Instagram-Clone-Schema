@@ -1,3 +1,5 @@
+*.sql linguist-language=sql
+
 --1. Finding 5 oldest users
 SELECT * 
 FROM users
