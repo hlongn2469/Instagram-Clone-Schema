@@ -26,29 +26,40 @@
 
 ## Joins
   ![image](https://user-images.githubusercontent.com/78957509/129669070-e70a2ad7-8fbd-49bd-b892-cb57ddd8da4a.png)
+Examples:
+  - [ ] LEFT join: How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
+  - [ ] RIGHT join: How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
+  - [ ] INNER join: How many friends and connections do my friends who are on both on Facebook and LinkedIn have?
 
 ## Cross joins (Outer joins)
 - [ ] **Not meaningful**
   ```js
-  SELECT * FROM customers, orders; 
+  SELECT * FROM facebook, linkedin; 
   ```
 ## Inner joins
 - [ ] Implicit: 
   ```js
-    SELECT * FROM customers, orders 
-    WHERE customers.id = orders.customer_id;
+    SELECT * FROM facebook, linkedin
+    WHERE facebook.name = linkedin.facebook_name;
   ```
 - [ ] Explicit: Use join keyword
   ```js
-  SELECT * FROM customers
-  JOIN orders
-      ON customers.id = orders.customer_id;
+  SELECT * FROM facebook
+  JOIN linkedin
+      ON facebook.name = linkedin.facebook_name;
   ```
 ## Left joins
 ```js
-SELECT * FROM customers
-LEFT JOIN orders
-    ON customers.id = orders.customer_id;
+  SELECT * FROM facebook
+  LEFT JOIN linkedin
+      ON facebook.name = linkedin.facebook_name;
+```
+
+## Right joins
+```js
+  SELECT * FROM facebook
+  RIGHT JOIN linkedin
+      ON facebook.name = linkedin.facebook_name;
 ```
 ## Many-to-Many relationship
 
