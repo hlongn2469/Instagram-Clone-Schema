@@ -25,7 +25,7 @@
 ## Joins
   ![image](https://user-images.githubusercontent.com/78957509/129669070-e70a2ad7-8fbd-49bd-b892-cb57ddd8da4a.png)
 
-## Cross joins
+## Cross joins (Outer joins)
 - [ ] **Not meaningful**
   ```js
   SELECT * FROM customers, orders; 
