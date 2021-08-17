@@ -5,7 +5,7 @@
 ![](https://github.com/hlongn2469/Learning-database-DBMS/blob/main/onetoone.png)
 ## One-to-Many relationship
 - [ ] For example: one customer to many orders
-- [ ] Needs primary key in customer table and foreign key in order table
+- [ ] Needs **primary** key in customer table and **foreign** key in order table
   ```js
   CREATE TABLE customers(
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -20,6 +20,12 @@
       customer_id INT,
       FOREIGN KEY(customer_id) REFERENCES customers(id)
   );
+  ```
+## Cross joins
+- [ ] Used to generate a paired combination of each row of the first table with each row of the second table.
+- [ ] *Not meaningful*
+  ```js
+  SELECT * FROM customers, orders; 
   ```
 ## Many-to-Many relationship
 
