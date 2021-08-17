@@ -1,4 +1,4 @@
-# Learning-Database (DBMS focus)
+# Learning-Database (Relational DBMS focus)
 ===========================================================================================
 ## One-to-One relationship
 - [ ] 1 record in a table is associated with one and only one record in another table
