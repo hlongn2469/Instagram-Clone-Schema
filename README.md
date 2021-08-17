@@ -23,7 +23,7 @@
   ```
 ## Cross joins
 - [ ] Used to generate a paired combination of each row of the first table with each row of the second table.
-- [ ] *Not meaningful*
+- [ ] **Not meaningful**
   ```js
   SELECT * FROM customers, orders; 
   ```
