@@ -62,6 +62,12 @@ Examples:
       ON facebook.name = linkedin.facebook_name;
 ```
 ## Many-to-Many relationship
+- [ ] **One** employee, during the time, could call **many** customers. Also, **one** customer, during the time, could receive calls from **many** employees.
+- [ ] To solve this:
+  * Add a table between tables employee and customer
+  * Add foreign keys (employee_id & customer_id) to that new table (call)
+![image](https://user-images.githubusercontent.com/78957509/129679336-b27ea479-2922-4baa-addc-60129c5f31d3.png)
+
 
 
 
