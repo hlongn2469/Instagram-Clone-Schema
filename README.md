@@ -21,12 +21,17 @@
       FOREIGN KEY(customer_id) REFERENCES customers(id)
   );
   ```
+
+## Joins
+  ![image](https://user-images.githubusercontent.com/78957509/129669070-e70a2ad7-8fbd-49bd-b892-cb57ddd8da4a.png)
+
 ## Cross joins
-- [ ] Used to generate a paired combination of each row of the first table with each row of the second table.
 - [ ] **Not meaningful**
   ```js
   SELECT * FROM customers, orders; 
   ```
+## Inner joins
+
 ## Many-to-Many relationship
 
 
