@@ -31,6 +31,8 @@
   SELECT * FROM customers, orders; 
   ```
 ## Inner joins
+- [ ] Implicit
+- [ ] Explicit
 
 ## Many-to-Many relationship
 
