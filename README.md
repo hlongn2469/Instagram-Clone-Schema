@@ -1,5 +1,7 @@
 # Learning-Database (Relational DBMS focus)
 ===========================================================================================
+## Resource:
+- [ ] joins animation: https://dataschool.com/how-to-teach-people-sql/left-right-join-animated/
 ## One-to-One relationship
 - [ ] 1 record in a table is associated with one and only one record in another table
 ![](https://github.com/hlongn2469/Learning-database-DBMS/blob/main/onetoone.png)
@@ -31,9 +33,23 @@
   SELECT * FROM customers, orders; 
   ```
 ## Inner joins
-- [ ] Implicit
-- [ ] Explicit
-
+- [ ] Implicit: 
+  ```js
+    SELECT * FROM customers, orders 
+    WHERE customers.id = orders.customer_id;
+  ```
+- [ ] Explicit: Use join keyword
+  ```js
+  SELECT * FROM customers
+  JOIN orders
+      ON customers.id = orders.customer_id;
+  ```
+## Left joins
+```js
+SELECT * FROM customers
+LEFT JOIN orders
+    ON customers.id = orders.customer_id;
+```
 ## Many-to-Many relationship
 
 
