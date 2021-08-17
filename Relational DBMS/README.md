@@ -4,7 +4,8 @@
 - [ ] joins animation: https://dataschool.com/how-to-teach-people-sql/left-right-join-animated/
 ## One-to-One relationship
 - [ ] 1 record in a table is associated with one and only one record in another table
-![](https://github.com/hlongn2469/Learning-database-DBMS/blob/main/onetoone.png)
+![image](https://user-images.githubusercontent.com/78957509/129680883-df595658-ceb3-465c-b28a-8645f800fd02.png)
+
 ## One-to-Many relationship
 - [ ] For example: one customer to many orders
 - [ ] Needs **primary** key in customer table and **foreign** key in order table
